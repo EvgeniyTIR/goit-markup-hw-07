@@ -111,8 +111,6 @@ img {
   padding-bottom: 32px;
   transition: color 250ms var(--timing-function);
 }
-.site-nav .item {
-}
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
@@ -232,8 +230,6 @@ img {
   padding: 10px 32px;
 }
 
-.hero-button-icon {
-}
 /*---------------------- Main info */
 .feature-list {
   display: flex;
