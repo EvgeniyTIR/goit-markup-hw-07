@@ -1,17 +1,9 @@
 @import './utils/variables';
 @import './base/normalize';
-@import './components/page-header-main';
+@import './components/page-header';
+@import './components/logo';
 @import './utils/placeholders';
 @import './utils/mixins';
-
-// навигация сайта
-.conteiner {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .nav__list {
   display: flex;
