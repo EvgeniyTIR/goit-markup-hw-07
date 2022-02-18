@@ -87,7 +87,7 @@ textarea {
   overflow: hidden;
 }
 
-.filter__button-block, .social, .adres__list, .clients__list, .team__social, .doing__list, .feature_list {
+.filter__button-block, .social, .adres__list, .clients__list, .team__social, .doing__list, .feature__list {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -259,10 +259,16 @@ textarea {
   padding: 10px 32px;
 }
 
-.feature {
+.feature__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.feature__item {
+  width: 270px;
 }
 
 .feature__item + .feature__item {
@@ -276,16 +282,12 @@ textarea {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
-  width: 270px;
 }
 
 .feature__text {
   color: #757575;
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-  width: 270px;
-  height: 75px;
 }
 
 .feature__icon-conteiner {
@@ -298,9 +300,9 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: #f5f4fa;
-  height: 120px;
   width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -330,6 +332,7 @@ textarea {
 }
 
 .doing__thumb {
+  height: 70px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -337,7 +340,6 @@ textarea {
 }
 
 .doing__cards-title {
-  height: 70px;
   font-weight: bold;
   font-size: 14px;
   line-height: calc(16 / 14);
@@ -345,6 +347,7 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  padding: 27px 0;
 }
 
 .doing__title {
@@ -454,7 +457,7 @@ textarea {
   fill: currentColor;
 }
 
-.team__item + .team__item {
+.team__item--social + .team__item--social {
   margin-left: 10px;
 }
 
@@ -832,10 +835,8 @@ textarea {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
-  /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   margin: 0;
-  /*padding: 20px 24px 0 24px;*/
   margin-bottom: 4px;
 }
 
@@ -843,9 +844,7 @@ textarea {
   color: #757575;
   font-size: 16px;
   line-height: 1.87;
-  /* identical to box height, or 187% */
   margin: 0;
-  /*padding: 0 24px 20px 24px;*/
 }
 
 /* -------------Overlay-------------*/
@@ -925,7 +924,7 @@ textarea {
   border-radius: 4px;
 }
 
-.modal__button {
+.modal__close-button {
   display: inline-flexbox;
   border: none;
   cursor: pointer;
@@ -948,7 +947,7 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 }
-.modal__button:hover, .modal__button:focus {
+.modal__close-button:hover, .modal__close-button:focus {
   background: #ffffff;
   background-image: url(../images/svg/close-blue.svg);
   background-size: 18px;
@@ -1010,7 +1009,7 @@ textarea {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.textarea {
+.modal__textarea {
   height: 120px;
   padding: 12px 16px;
   margin-bottom: 20px;
@@ -1022,8 +1021,6 @@ textarea {
   letter-spacing: 0.01em;
   color: #757575;
   display: inline-block;
-  margin: 0;
-  padding: 0;
   margin-bottom: 4px;
 }
 
@@ -1042,7 +1039,7 @@ textarea {
   position: relative;
 }
 
-.check {
+.modal__label-check {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -1140,11 +1137,11 @@ textarea {
   border-radius: 2px;
 }
 
-.modal__checkbox:checked + .check > span {
+.modal__checkbox:checked + .modal__label-check > span {
   background-color: #2196f3;
   border: none;
 }
-.modal__checkbox:focus + .check > span, .modal__checkbox:hover + .check > span {
+.modal__checkbox:focus + .modal__label-check > span, .modal__checkbox:hover + .modal__label-check > span {
   border-color: #2196f3;
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
