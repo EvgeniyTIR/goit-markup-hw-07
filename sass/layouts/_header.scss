@@ -9,6 +9,11 @@
   @include center;
   @extend %container;
 }
+.nav {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+}
 .nav__link {
   display: block;
   @include font(500, 14px, 1.43, 0.02em);

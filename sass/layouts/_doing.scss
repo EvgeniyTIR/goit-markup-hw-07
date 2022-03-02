@@ -2,9 +2,11 @@
 .doing {
   @extend %section;
   padding-top: 0;
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
 .doing__list {
-  display: flex;
   @extend %list;
 
   .doing__item + .doing__item {
@@ -16,8 +18,6 @@
   z-index: 0;
 }
 .doing__thumb {
-  height: 70px;
-  width: 100%;
   position: absolute;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);

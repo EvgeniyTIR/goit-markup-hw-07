@@ -3,13 +3,16 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
 }
 .foooter__logo {
-  display: block;
+  // display: block;
   width: 145px;
   height: 31px;
   color: $white-color;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 .footer__adress-place {
   color: $white-color;
@@ -34,15 +37,18 @@
 /*Footer socials*/
 
 .footer__flex {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
   @extend %container;
 }
 .footer__invite-wrap {
-  margin-left: 70px;
+  // margin-left: 70px;
 }
 .social {
   @include center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @extend %list;
 }
 .social__item + .social__item {
@@ -58,6 +64,9 @@
 
 .social__link {
   @include center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -77,14 +86,14 @@
 
 /*----------Footer Form-----------*/
 .footer__form {
-  display: flex;
-  margin-left: 93px;
+  // display: flex;
+  // margin-left: 93px;
 }
 .form {
-  margin-left: 93px;
+  // margin-left: 93px;
 }
 .footer__button {
-  margin-left: 12px;
+  // margin-left: 12px;
   @include center;
 }
 
@@ -108,5 +117,5 @@
   }
 }
 .footer__icon-send {
-  margin-left: 10px;
+  // margin-left: 10px;
 }

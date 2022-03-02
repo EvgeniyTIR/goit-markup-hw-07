@@ -1,17 +1,18 @@
 // Основной инфо блок
+
 .feature {
   @extend %section;
 }
 .feature__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   @extend %list;
 }
 .feature__item {
-  width: 270px;
+  // width: 270px;
 }
 .feature__item + .feature__item {
-  margin-left: 30px;
+  // margin-left: 30px;
 }
 .feature__title--hidden {
   @extend %visually-hidden;
@@ -30,9 +31,11 @@
 // Иконки мейн блока
 .feature__icon-conteiner {
   @include center;
-
-  width: 270px;
-  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // width: 270px;
+  // height: 120px;
 
   background-color: #f5f4fa;
   border-radius: 4px;
